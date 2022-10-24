@@ -11,9 +11,9 @@ let package = Package(
         .watchOS(.v7)
     ],
     products: [
-        .library(name: "Pulse", targets: ["Pulse"]),
-        .library(name: "PulseUI", targets: ["PulseUI"]),
-        .library(name: "PulseLogHandler", targets: ["PulseLogHandler"])
+        .library(name: "Pulse", type: .dynamic, targets: ["Pulse"]),
+        .library(name: "PulseUI", type: .dynamic, targets: ["PulseUI"]),
+        .library(name: "PulseLogHandler", type: .dynamic, targets: ["PulseLogHandler"])
     ],
     dependencies: [
         .package(url: "https://github.com/apple/swift-log.git", from: "1.2.0")
